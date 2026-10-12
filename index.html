@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPD Amiternina - FC 2027 Ufficiale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Teko:wght@500;700&family=Inter:wght@300;400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #0b0f19; color: #f3f4f6; }
+        .font-teko { font-family: 'Teko', sans-serif; }
+        .card-dark { background: linear-gradient(145deg, #1f2937, #111827); border: 1px solid #374151; }
+    </style>
+</head>
+<body class="min-h-screen pb-20">
+    <!-- HEADER -->
+    <header class="bg-gradient-to-r from-yellow-600 via-yellow-500 to-yellow-600 text-black shadow-xl">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 bg-black text-yellow-400 rounded-full flex items-center justify-center font-bold text-2xl border-2 border-yellow-300 shadow">
+                    ⚽
+                </div>
+                <div>
+                    <h1 class="font-teko text-3xl uppercase font-bold leading-none tracking-wider">SPD AMITERNINA</h1>
+                    <p class="text-xs font-bold uppercase opacity-90 tracking-widest">FC 2027 • Gazzetta Ufficiale</p>
+                </div>
+            </div>
+            <button onclick="sbloccaAdmin()" id="btn-admin-status" class="bg-black/30 hover:bg-black/40 text-black px-3.5 py-2 rounded-xl font-bold text-xs transition flex items-center gap-2 border border-black/20 shadow">
+                <i class="fa-solid fa-lock text-red-900" id="icon-lock"></i>
+                <span id="text-lock">Sola Lettura (Ospite)</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="max-w-5xl mx-auto px-4 py-6 space-y-6">
+        
+        <!-- NAV TABS -->
+        <div class="flex border-b border-gray-800 space-x-2 overflow-x-auto pb-1">
+            <button onclick="switchTab('classifica')" id="tab-classifica" class="tab-btn px-4 py-2 text-sm font-bold rounded-t-lg bg-yellow-500 text-black flex items-center gap-2 whitespace-nowrap">
+                <i class="fa-solid fa-trophy"></i> Classifica & Medie
+            </button>
+            <button onclick="switchTab('stor
